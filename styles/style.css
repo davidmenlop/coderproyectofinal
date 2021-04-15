@@ -1,0 +1,227 @@
+.navbar .navbar_logo, .navbar .navbar_menu, .navbar .navbar_menu .navbar_menu--links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar {
+  background: #ffffff;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.5rem calc((100vw - 1200px)/2);
+  z-index: 10;
+  position: relative;
+}
+
+.navbar .navbar_logo {
+  color: #222121;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  margin-left: 24px;
+}
+
+.navbar .navbar_bar {
+  opacity: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar .navbar_bar {
+    color: #222121;
+    opacity: 1;
+    position: absolute;
+    top: 22px;
+    right: 20px;
+    font-size: 2rem;
+  }
+}
+
+.navbar .navbar_menu {
+  list-style: none;
+  text-align: center;
+  margin-right: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar .navbar_menu {
+    display: none;
+  }
+}
+
+.navbar .navbar_menu .navbar_menu--links {
+  color: #222121;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  padding: 0 1rem;
+}
+
+.navbar .navbar_menu .navbar_menu--links:hover {
+  color: #00cc66;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.navbar .navbar_menu #button {
+  padding: 12px 24px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background: #00cc66;
+  margin-left: 16px;
+  color: #ffffff;
+}
+
+.navbar .navbar_menu #button:hover {
+  background: #fb4b4e;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+.hero {
+  background-color: #ffffff;
+}
+
+.hero_contenedor {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  margin: 0 auto;
+  height: 90vh;
+  z-index: 1;
+  width: 100%;
+  max-width: 1200px;
+  padding-right: 24px;
+  padding-left: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .hero_contenedor {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    height: 100%;
+  }
+}
+
+.hero_contenedor .hero_contenedor_izq {
+  width: 100%;
+  line-height: 1.2;
+}
+
+@media screen and (max-width: 768px) {
+  .hero_contenedor .hero_contenedor_izq {
+    padding: 5rem 0;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .hero_contenedor .hero_contenedor_izq {
+    line-height: 1.5;
+  }
+}
+
+.hero_contenedor .hero_contenedor_izq h1 {
+  font-size: 4rem;
+  color: #00cc66;
+}
+
+@media screen and (max-width: 280px) {
+  .hero_contenedor .hero_contenedor_izq h1 {
+    font-size: 1.5rem;
+  }
+}
+
+.hero_contenedor .hero_contenedor_izq h2 {
+  font-size: 4rem;
+  color: #222121;
+}
+
+@media screen and (max-width: 280px) {
+  .hero_contenedor .hero_contenedor_izq h2 {
+    font-size: 2rem;
+  }
+}
+
+.hero_contenedor .hero_contenedor_izq p {
+  font-size: 2rem;
+  color: #222121;
+  margin-top: 1rem;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 280px) {
+  .hero_contenedor .hero_contenedor_izq p {
+    font-size: 1.5rem;
+  }
+}
+
+.hero_contenedor .hero_contenedor--btn {
+  font-size: 1rem;
+  background-color: #00cc66;
+  padding: 14px 32px;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  margin-top: 2rem;
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  outline: none;
+}
+
+.hero_contenedor .hero_contenedor--btn a {
+  position: relative;
+  z-index: 2;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.hero_contenedor--btn:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #fb4b4e;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border-radius: 4px;
+}
+
+.hero_contenedor--btn:hover:after {
+  width: 100%;
+}
+
+.hero_contenedor_right {
+  text-align: center;
+}
+
+.hero_contenedor_img {
+  height: 100%;
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */
